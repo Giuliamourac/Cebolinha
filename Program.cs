@@ -9,13 +9,9 @@ namespace Cebolinha
 
             Console.WriteLine("Escreva algo para o Cebolinha te imitar.");
 
-            string frase = Console.ReadLine();
+            string frase = Console.ReadLine()!;
 
-            string cebolinha = frase
-
-                .Replace("R", "L")
-
-                .Replace("r", "l");
+            string cebolinha = frase.Replace("R", "L").Replace("r", "l");
 
             Console.WriteLine($"Cebolinha: {cebolinha}");
 
